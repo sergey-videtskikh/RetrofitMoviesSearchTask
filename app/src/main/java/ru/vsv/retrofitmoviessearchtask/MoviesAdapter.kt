@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import ru.vsv.retrofitmoviessearchtask.dto.MovieDto
 
-class MovieAdapter(private val dataSet: List<MovieDto>) :
-    RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
+class MoviesAdapter(private val dataSet: List<MovieDto>) :
+    RecyclerView.Adapter<MoviesAdapter.ViewHolder>() {
 
     val TAG = "MovieAdapter"
 
@@ -26,8 +26,8 @@ class MovieAdapter(private val dataSet: List<MovieDto>) :
 
         init {
             // Define click listener for the ViewHolder's View
-            coverImage = view.findViewById(R.id.cover_image)
-            title = view.findViewById(R.id.title_text)
+            coverImage = view.findViewById(R.id.cover)
+            title = view.findViewById(R.id.movie_title)
             description = view.findViewById(R.id.description)
         }
     }

@@ -5,4 +5,6 @@
     <string name="movie_cover">обложка фильма</string>
     <string name="description_example">Original title: Harry Potter and the Sorcerer\'s Stone 2001 12+ 2h 32m</string>
     <string name="title_example">Harry Potter and the Sorcerer\'s Stone</string>
+    <string name="nothing_found">По запросу ничего не найдено</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
 </resources>

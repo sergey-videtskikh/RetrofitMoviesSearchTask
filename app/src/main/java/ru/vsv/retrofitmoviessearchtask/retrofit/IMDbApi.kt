@@ -5,10 +5,10 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import ru.vsv.retrofitmoviessearchtask.dto.SearchMovieResponseDto
 
-interface RetrofitApiService {
-    @GET("/en/API/SearchMovie/{apiKey}/{query}")
+interface IMDbApi {
+    @GET("/en/API/SearchMovie/{apiKey}/{expression}")
     fun searchMovies(
         @Path("apiKey") apiKey: String,
-        @Path("query") query: String
+        @Path("expression") expression: String
     ): Call<SearchMovieResponseDto>
 }

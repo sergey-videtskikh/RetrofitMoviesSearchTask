@@ -2,15 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="#EEEEEE"
+    android:orientation="horizontal"
+    android:padding="8dp">
 
     <ImageView
-        android:id="@+id/cover_image"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_margin="10dp"
+        android:id="@+id/cover"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
         android:contentDescription="@string/movie_cover"
+        android:scaleType="centerCrop"
         tools:src="@drawable/cover_example" />
 
     <LinearLayout
@@ -19,19 +22,24 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/title_text"
+            android:id="@+id/movie_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
             android:textSize="20sp"
+            android:textStyle="bold"
             tools:text="@string/title_example" />
 
         <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
             android:textSize="16sp"
+            android:textStyle="italic"
             tools:text="@string/description_example" />
 
     </LinearLayout>
