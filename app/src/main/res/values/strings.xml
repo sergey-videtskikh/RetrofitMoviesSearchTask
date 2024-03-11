@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Retrofit Movies Search Task</string>
+    <string name="search_button">Найти</string>
+    <string name="search_hint">введите запрос поиска</string>
+    <string name="movie_cover">обложка фильма</string>
+    <string name="description_example">Original title: Harry Potter and the Sorcerer\'s Stone 2001 12+ 2h 32m</string>
+    <string name="title_example">Harry Potter and the Sorcerer\'s Stone</string>
 </resources>
